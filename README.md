@@ -43,9 +43,10 @@ First, let's choose a reasonable k value to work with. We use tuning to select t
 **Creating a recipe**
 
 Our first step in building the classification model is to create a recipe so our training data can be prepared to be used in the model. We included both the scale and center functions to ensure all our predictor variables have a mean of zero and standard deviation of one to ensure a bell curve distribution.
-# Summary Of Results
 
 <img width="497" alt="Screenshot 2024-05-10 at 6 26 08 PM" src="https://github.com/atao2004/Diamond-Predictor/assets/148929819/45c3aa46-f47e-4b4a-bb0a-9ae7286a3afe">
+
+# Summary Of Results
 
 Through this data analysis, it was found that some of the geometry factors, the depth and table, are the main two quantitative predictors that can be used to predict the cut quality of diamonds. When the model ran with those two being used as predictors, it was found that the accuracy of the prediction is 70.8%. The model was then tested again but this time, with the remaining geometry factors x,y,z added as the predictors, the accuracy was increased to 72.7% (1.9% accuracy increase). The main takeaway from this finding is that while geometric factors affect the overall visual aesthetic of the diamond, some of them might not have a very significant impact on the cut quality prediction.
 
