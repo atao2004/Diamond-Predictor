@@ -46,6 +46,15 @@ Our first step in building the classification model is to create a recipe so our
 
 <img width="497" alt="Screenshot 2024-05-10 at 6 26 08 PM" src="https://github.com/atao2004/Diamond-Predictor/assets/148929819/45c3aa46-f47e-4b4a-bb0a-9ae7286a3afe">
 
+**Accuracy vs k graph**
+
+After filtering for the accuracy values, a visualization graph with the accuracies vs neighbors is created to see which neighbour is the most stable. We estimate the nearest neighbor by looking at which one has the highest accuracy.
+
+<img width="728" alt="Screenshot 2024-05-14 at 12 18 58 AM" src="https://github.com/atao2004/Diamond-Predictor/assets/148929819/2a611a12-f337-4025-85d7-dc62565ad5fd">
+
+The graph above suggests that the selection of k between 50-150 would be the best choice for K, so let's pick a relatively smaller number to speed up our remaining calculations. 70 looks to be a good k value to choose.
+
+
 # Summary Of Results
 
 Through this data analysis, it was found that some of the geometry factors, the depth and table, are the main two quantitative predictors that can be used to predict the cut quality of diamonds. When the model ran with those two being used as predictors, it was found that the accuracy of the prediction is 70.8%. The model was then tested again but this time, with the remaining geometry factors x,y,z added as the predictors, the accuracy was increased to 72.7% (1.9% accuracy increase). The main takeaway from this finding is that while geometric factors affect the overall visual aesthetic of the diamond, some of them might not have a very significant impact on the cut quality prediction.
